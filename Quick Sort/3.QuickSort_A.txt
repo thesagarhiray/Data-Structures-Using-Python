@@ -1,0 +1,25 @@
+---------Algorithm1-----------
+1.  start
+2.  down=lb
+3.  up=ub
+4.  pivot=x[down]
+5.  as long as x[down] <= pivot and down < ub
+        down++
+6.  as long as x[up] > pivot and up > lb
+        up--
+7.  if down < up then
+        interchange x[down] and x[up]
+        goto 5
+8.  interchange x[up] and pivot
+        return up
+10. stop
+
+---------Algorithm2-----------
+1.  start
+2.  x is array of n elements
+3.  lb=0 and ub=n-1
+4.  if lb < ub then
+        j=partition(x,lb,ub)
+        sort(x,lb,j-1)
+        sort(x,j+1,ub)
+5.  stop  
